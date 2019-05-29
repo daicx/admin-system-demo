@@ -1,0 +1,195 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+*::before,*::after{box-sizing: border-box;}
+@font-face{
+    font-family: 'PingFang';
+    src: url(../font/PingFang\ Medium.ttf)
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{font:inherit;}
+button{
+    border: 1px solid transparent;  
+    outline: none;
+}
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+body{
+    min-width:1158px;
+    height:100vh;
+    background-image: url('../commonImages/背景@2x.png'); 
+    background-position:left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'PingFang';
+    font-size:16px;
+} 
+.boxWrapper{
+    width:84.3rem;
+    height:53.8rem;
+    margin-left:auto;margin-right:auto;
+    margin-top:1.4rem;
+    margin-bottom:10px;
+    -webkit-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
+-moz-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
+box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
+}
+/*navBar*/
+#navBar{
+    height:3.6rem;
+    background:#3c92ff;
+}
+#navBar .item{
+    float:left;
+    font-size:1.4rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:3.6rem;
+    margin-left:3rem;
+}
+#navBar .logout{
+    float:right;
+    line-height:3.6rem;
+    margin-right:3rem;
+}
+#navBar .logout>img{
+    width:2rem;
+    transform: translateY(0.6rem);
+}
+#navBar .logout>span{
+    font-size:1.1rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    margin-left:1rem;  
+    cursor: pointer;
+}
+#contentBox{
+    display:flex;
+}
+aside.tabBar{
+    flex-shrink:0;
+    width:15rem;
+    height:100%;
+    background:#ffffff;
+}
+aside.tabBar ul{
+    margin-top:2.8rem;
+}
+ 
+aside.tabBar li{
+    margin-bottom:2.4rem;
+    color: #ced5e3;
+    text-align: center;
+    cursor: pointer;
+}
+
+aside li img{
+    height:1rem;
+    margin-right:0.4rem;
+}
+aside li .checkedItem{
+    display: none;
+}
+
+
+/*taskContent*/
+main.content{
+    width:69.3rem;
+    height:50.2rem;
+    background:#f1f3f8;
+    overflow: hidden;
+}
+main .contentWrapper{
+    width:62.5rem;
+    height:50.2rem;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1.7rem;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.contentWrapper::-webkit-scrollbar {
+    display: none;/*去掉滚动条*/
+}
+/*三个账号图片*/
+.accountCon{
+    border:1px solid red;
+    width:62.5rem;
+    height:11.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.accTotalNum{
+    background-image: url('./accImages/账号总数量.png');
+    width:18.6rem;
+    border:1px solid blue;
+    position: relative;
+}
+.accCanPush{
+    background-image: url('./accImages/可推信账号.png');
+    width:18.6rem;
+    border:1px solid blue;
+    position: relative;
+
+}
+.accNoPush{
+    background-image: url('./accImages/不可推信账号.png');
+    width:18.6rem;
+    border:1px solid blue;
+    position: relative;
+
+}
+.accountCon span{
+    font-family:PingFang-SC-Bold;
+    font-weight:500;
+    color:rgba(255,254,254,1);
+    font-size:2.2rem;
+    position: absolute;
+    top:2rem;
+    left:2.2rem;
+}
+/*详细数据表*/
+.dataForm{
+    width:62.5rem;
+    background:rgba(255,255,255,1);
+    border-radius: 0.3rem;
+    margin-top:0.8rem;
+    padding-bottom:3rem;
+}
+.dataFormWrapper{
+    width:59rem;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+p.dataTitle{
+    font-family:PingFang-SC-Bold;
+    font-weight:600;
+    color:rgba(51,51,51,1);
+    font-size:1.4rem;
+    padding:1.2rem;
+}
+.dataForm .dataContent{}
+.dataForm .dataContent ul{}
+.dataForm .dataContent ul li{
+    height:3.2rem;
+    border-top:0.5px solid rgba(250,247,248,1);
+    border-bottom:0.5px solid rgba(250,247,248,1);
+    line-height: 3.2rem;
+    
+}
+.dataForm .dataContent ul li span{
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    font-size:1.1rem;
+}
+.dataContent ul li .amount{
+    transform: translateX(30rem);
+}

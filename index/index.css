@@ -2,7 +2,7 @@
 *::before,*::after{box-sizing: border-box;}
 @font-face{
     font-family: 'PingFang';
-    src: url(./font/PingFang\ Medium.ttf)
+    src: url(../font/PingFang\ Medium.ttf)
 }
 ol,ul{
     list-style: none;
