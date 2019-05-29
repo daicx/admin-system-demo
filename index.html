@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="z-HANs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>后台管理系统</title>
+</head>
+
+<body>
+    <div class="boxWrapper">
+        <nav id="navBar" class="clearfix">
+            <p class="item">数据管理系统</p>
+            <div class="logout">
+                <img src="./image/登录@2x.png" alt="退出登录">
+                <span>退出登录</span>
+            </div>
+        </nav>
+        <div id="contentBox">
+            <aside class="tabBar">
+                <ul>
+                    <li class="task">
+                        <div>
+                            <img class="defaultItem" src="./image/aside/任务图标.png" alt="">
+                            <img class="checkedItem" src="./image/aside/任务图标（选中）.png" alt="">
+                            <span>任务列表</span>
+                        </div>
+                    </li>
+                    <li class="account">
+                        <div>
+                            <img class="defaultItem" src="./image/aside/账号列表图标.png" alt="">
+                            <img class="checkedItem" src="./image/aside/账号列表图标（选中）.png" alt="">
+                            <span>账号列表</span>
+                        </div>
+                    </li>
+                    <li class="fourteen">
+                        <div>
+                            <img class="defaultItem" src="./image/aside/十四码列表.png" alt="">
+                            <img class="checkedItem" src="./image/aside/十四码列表图标（选中）.png" alt="">
+                            <span>十四码列表</span>
+                        </div>
+                    </li>
+                    <li class="doublePhone">
+                        <div>
+                            <img class="defaultItem" src="./image/aside/双重手机号图标.png" alt="">
+                            <img class="checkedItem" src="./image/aside/双重手机号图标（选中）.png" alt="">
+                            <span>双重手机号详情</span>
+                        </div>
+                    </li>
+                    <li class="systemSet">
+                        <div>
+                            <img class="defaultItem" src="./image/aside/系统设置图标.png" alt="">
+                            <img class="checkedItem" src="./image/aside/系统设置图标（选中）.png" alt="">
+                            <span>系统设置</span>
+                        </div>
+                    </li>
+                    <li class="phonePush">
+                        <div>
+                            <img class="defaultItem" src="./image/aside/推信手机号图标.png" alt="">
+                            <img class="checkedItem" src="./image/aside/推信手机号图标（选中）.png" alt="">
+                            <span>推信手机号</span>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <main class="taskContent">
+                <div class="taskContentWrapper">
+                    <div class="searchBox">
+                        <input id="inputText" type="text" placeholder="请选推信内容">
+                        <i class="searchIcon"></i>
+                        <button class="searchBtn">搜索</button>
+                        <button class="creatTaskBtn">创建任务</button>
+                    </div>
+                    <div class="stateNav">
+                        <ul class="clearfix">
+                            <li class="allTask">全部</li>
+                            <li class="initalTask">初始</li>
+                            <li class="runningTask">运行中</li>
+                            <li class="processingTask">待完成</li>
+                            <li class="completedTask">已完成</li>
+                            <li class="pausedTask">已暂停</li>
+                        </ul>
+                    </div>
+                    <hr class="stateNavLine">
+                    <div class="taskBoxWrapper">
+                        <ul>
+                            <li class="taskBox">
+                                <div class="taskTitle blueBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox">
+                                <div class="taskTitle greenBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox ">
+                                <div class="taskTitle yellowBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox ">
+                                <div class="taskTitle redBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox">
+                                <div class="taskTitle blueBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox ">
+                                <div class="taskTitle greenBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox ">
+                                <div class="taskTitle yellowBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox ">
+                                <div class="taskTitle redBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox">
+                                <div class="taskTitle blueBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+                            <li class="taskBox">
+                                <div class="taskTitle greenBg">
+                                    <span>任务标识1</span>
+                                    <div class="taskState"><span>运行中</span></div>
+                                </div>
+                                <div class="taskContent">
+                                    <p class="ctTitle">内容：</p>
+                                    <p class="taskCD">xxxxxxxxxxxxxxxxxxxxxx</p>
+                                </div>
+                                <hr class="taskTitleLine">
+                                <div class="updateTime">
+                                    <span class="ctTitle">更新时间：</span><span class="ctContext">2019-5-20 12:36</span>
+                                </div>
+                                <hr class="updateTimeLine">
+                                <div class="totalNum">
+                                    <span class="ctTitle">总数：</span><span class="ctContext colorT">200</span>
+                                </div>
+                                <hr class="totalNumLine">
+                                <div class="successNum">
+                                    <span class="ctTitle">成功数：</span><span class="ctContext colorS">116</span>
+                                </div>
+                                <hr class="successNumLine">
+                                <div class="failNum">
+                                    <span class="ctTitle">失败数：</span><span class="ctContext colorF">84</span>
+                                </div>
+                                <hr class="failNumLine">
+                                <div class="sucProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="currentPro"></div>
+                                    </div>
+                                    <span>58%</span>
+                                </div>
+                                <div class="failProgress clearfix">
+                                    <div class="totalPro">
+                                        <div class="nofinishPro"></div>
+                                    </div>
+                                    <span>42%</span>
+                                </div>
+                                <div class="taskBtns">
+                                    <button class="detalis">详情</button>
+                                    <button class="taskStart">开始任务</button>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        var pageWidth = window.innerWidth
+        document.write('<style>html{font-size:' + pageWidth / 100 + 'px;}</style>')
+    </script>
+</body>
+
+</html>
