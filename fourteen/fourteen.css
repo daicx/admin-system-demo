@@ -75,7 +75,7 @@ box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
 aside.tabBar{
     flex-shrink:0;
     width:15rem;
-    height:100%;
+    height:50.2rem;
     background:#ffffff;
     -webkit-box-shadow: 5px 0px 8px -5px rgba(148,140,148,0.75);
     -moz-box-shadow: 5px 0px 8px -5px rgba(148,140,148,0.75);
@@ -107,7 +107,7 @@ aside li .checkedItem{
 }
 
 
-/*taskContent*/
+/*内容区域*/
 main.content{
     width:69.3rem;
     height:50.2rem;
@@ -119,7 +119,7 @@ main .contentWrapper{
     height:50.2rem;
     margin-left:auto;
     margin-right:auto;
-    margin-top:1.7rem;
+    margin-top:3rem;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -127,102 +127,140 @@ main .contentWrapper{
 .contentWrapper::-webkit-scrollbar {
     display: none;/*去掉滚动条*/
 }
-/*三个账号图片*/
-.accountCon{
+
+/*内容框标题*/
+p.contentTitle{
+    font-size:1.7rem;
+    color:rgba(64,151,255,1);
+    font-weight:500;
+}
+/*五个框框*/
+.contentSort{
     width:62.5rem;
-    height:11.6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top:2.2rem;
+    margin-bottom:3.1rem;
+}
+.contentSort .sortBox{
+    width: 9.8rem;
+    height: 7.8rem;
+    background: rgba(255,255,255,1);
+    border-radius: 0.4rem;
+    padding-top:0.8rem;
+    padding-left:1.9rem;
+}
+.contentSort .sortBox hr{
+    border:none;
+    width:3.5rem;
+    height:2px;
+    margin-top:0.6rem;
+    margin-bottom:0.6rem;
+}
+.contentSort .sortBox .contentSortNum{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.contentSort .sortBox .contentSortTitle{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:rgba(51,51,51,1);
+}
+.blueFt{
+    color: #1f85ff;
+}
+
+.greenFt{
+    color: #65bd65;
+}
+
+.yellowFt{
+    color: #f3a821;
+}
+
+.redFt{
+    color: #f85353;
+}
+.blueBg{
+    background: #1f85ff;
+}
+
+.greenBg{
+    background: #65bd65;
+}
+
+.yellowBg{
+    background: #f3a821;
+}
+
+.redBg{
+    background: #f85353;
+}
+/*数量表区域*/
+.dataFormWrapper{
+    width:62.5rem;
     display: flex;
     justify-content: space-between;
 }
-.accTotalNum{
-    background-image: url('./accImages/账号总数量.png');
-    background-size: cover;
-    width:18.6rem;
-    position: relative;
-}
-.accCanPush{
-    background-image: url('./accImages/可推信账号.png');
-    background-size: cover;
-    width:18.6rem;
-    position: relative;
-
-}
-.accNoPush{
-    background-image: url('./accImages/不可推信账号.png');
-    background-size: cover;
-    width:18.6rem;
-    position: relative;
-
-}
-.accountCon span{
-    font-family:PingFang-SC-Bold;
-    font-weight:500;
-    color:rgba(255,254,254,1);
-    font-size:2.2rem;
-    position: absolute;
-    top:2rem;
-    left:2.2rem;
-}
-/*详细数据表*/
 .dataForm{
-    width:62.5rem;
-    background:rgba(255,255,255,1);
-    border-radius: 0.3rem;
-    margin-top:0.8rem;
-    padding-bottom:3rem;
+    width:29rem;
+    height:23.2rem;
+    background: rgba(255,255,255,1);
+    border-radius: 0.4rem;
 }
-.dataFormWrapper{
-    width:59rem;
+.formContainer{
+    width:25.6rem;
     margin-left:auto;
     margin-right:auto;
-
 }
-p.dataTitle{
-    font-family:PingFang-SC-Bold;
-    font-weight:600;
-    color:rgba(51,51,51,1);
-    font-size:1.4rem;
-    padding:1.2rem;
+.dataForm .dataTitle{
+    margin:1rem 0;
 }
-
-.dataForm .dataContent ul li{
-    height:3.2rem;
-    border-top:0.5px solid rgba(250,247,248,1);
-    border-bottom:0.5px solid rgba(250,247,248,1);
-    line-height: 3.2rem;
+.dataForm .dataTitle .dataTitle1{
+    font-size:1.5rem;
+}
+.dataForm .dataTitle .dataTitle2{
+    font-size:1.1rem;
+    font-weight:500;
+   color:#333333;
+}
+.dataContent{
+    width:25.6rem;
+}
+.dataContent li{
+    height:3rem;
+    line-height:3rem;
+    border-bottom:2px solid rgba(250,247,248,1);
     position: relative;
 }
-.dataForm .dataContent ul li .dataDetail,
-.dataForm .dataContent ul li .amountText
-{
+.dataContent li hr{
+    border:none;
+    height:2px;
+    width:25.6rem;
+    background: rgba(250,247,248,1);
+}
+.dataContent li .dataDetail,
+.dataContent li .amount{
+    font-size:1.1rem;
     font-weight:500;
     color:rgba(51,51,51,1);
+}
+.dataContent li .amount{
+    position: absolute;
+    left:10.4rem;
+}
+.dataContent li button.check{
+    height:2.1rem;
+    width:4.3rem;
+    border-radius:0.2rem;
     font-size:1.1rem;
-}
-.dataForm .dataContent ul li .greenBg{
-    color:#65bd65;
-}
-.dataForm .dataContent ul li .redBg{
-    color:#f85353;
-}
-.dataContent ul li .dataDetail{
-    margin-left:0.7rem;
-}
-.dataContent ul li .amount{
+    color:rgba(255,255,255,1);
+    white-space: nowrap;
+    background: #4097ff;
     position: absolute;
-    left:21rem;
-}
-.dataContent ul li .check{
-    position: absolute;
-    left:50rem;
+    left:20.5rem;
     top:50%;
     transform: translateY(-50%);
     cursor: pointer;
-    height:2.2rem;
-  width:4.4rem;
-  border-radius:0.2rem;
-  font-size:1.1rem;
-  color:rgba(255,255,255,1);
- white-space: nowrap;
- background: #4097ff;
 }
