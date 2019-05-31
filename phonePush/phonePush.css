@@ -128,3 +128,187 @@ main .contentWrapper{
 .contentWrapper::-webkit-scrollbar {
     display: none;/*去掉滚动条*/
 }
+/*数量状态区域框框*/
+.numSort{
+    width:62.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top:2.2rem;
+    margin-bottom:3.1rem;
+}
+.numSort .numSortBox{
+    width: 12.1rem;
+    height: 9.5rem;
+    background: rgba(255,255,255,1);
+    border-radius: 0.4rem;
+    padding-top:0.8rem;
+    padding-left:1.9rem;
+}
+.numSort .numSortBox hr{
+    border:none;
+    width:4.3rem;
+    height:2px;
+    margin-top:0.6rem;
+    margin-bottom:0.6rem;
+}
+.numSort .numSortBox .numSortNum{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.numSort .numSortBox .numSortTitle{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:rgba(51,51,51,1);
+}
+.color51Ft{
+    color:rgba(51,51,51,1);
+}
+.blueFt{
+    color: #1f85ff;
+}
+
+.greenFt{
+    color: #65bd65;
+}
+
+.yellowFt{
+    color: #f3a821;
+}
+
+.redFt{
+    color: #f85353;
+}
+.blueBg{
+    background: #1f85ff;
+}
+
+.greenBg{
+    background: #65bd65;
+}
+
+.yellowBg{
+    background: #f3a821;
+}
+
+.redBg{
+    background: #f85353;
+}
+.color102Ft{
+    color:rgba(102,102,102,1);
+}
+.bk4097ffBg{
+    background: #4097ff;
+}
+
+/*手机号码使用状态区域*/
+.phoneStateForm{
+    width:62.5rem;
+    height:37rem;
+    background:rgba(255,255,255,1);
+    border-radius: 0.4rem;
+    position: relative;
+}
+.phoneStateForm .stateContainer{
+    display: flex;
+}
+.phoneStateForm .stateContainer p{
+    margin-top:1.1rem;
+    margin-bottom:2.1rem;
+    padding:0 2rem;
+    border-right: 1px solid rgba(204,204,204,1);
+}
+.phoneStateForm .stateContainer p:last-child{
+    border:none;
+}
+.phoneStateForm .stateContainer .all{
+    font-size:1.2rem;
+    font-weight: 500;
+    color:rgba(64,151,255,1);
+}
+.phoneStateForm .stateContainer p{
+    font-size:1.2rem;
+    font-weight: 500;
+}
+
+/*状态具体内容li*/
+.stateContent li.stateLi{
+    width:17rem;
+    height:9.5rem;
+    background:rgba(255,255,255,1);
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(51,51,51,0.1);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(51,51,51,0.1);
+    box-shadow: 0px 2px 9px 0px rgba(51,51,51,0.1);
+    border-radius: 0.4rem;
+    margin-bottom:1.4rem;
+    float:left;
+    margin-right:1.7rem;
+    margin-left:1.7rem;
+}
+.stateContent li.stateLi .headBox{
+    width:100%;
+    height: 1.8rem;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+.stateContent li.stateLi .stateBox{
+    width:14rem;
+    height:2rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+.stateContent li.stateLi .stateBox li{
+    height:2.1rem;
+    line-height: 2.1rem;
+    border-bottom: 1px solid rgba(204,204,204,1);
+}
+.stateContent li.stateLi .stateBox span{
+    font-size:0.8rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+
+
+/*页码区域*/
+.numFoot{
+    display: flex;
+    justify-content: space-between;
+    width:17rem;
+    height:1.8rem;
+    line-height: 1.8rem;
+    position: absolute;
+    bottom:0.7rem;
+    right:1.3rem;
+}
+.numFoot p{
+    word-spacing: 2px;
+    text-align: center;
+}
+.numFoot .totalText,
+.numFoot .eachPage{
+    font-size:0.8rem;
+    color:rgba(51,51,51,1);
+    font-weight:500;
+}
+.numFoot .eachPage{
+    width:5.6rem;
+    height:100%;
+    border:1px solid rgba(204,204,204,0.5);
+}
+.numFoot .changePage{
+    font-size:0.8rem;
+    color:rgba(64,151,255,1);
+    font-weight:500;
+    width:5.6rem;
+    height:100%;
+    border:1px solid rgba(204,204,204,0.5);
+}
+.numFoot .changePage img{
+    width:0.4rem;
+}
+.numFoot .changePage .preImg{
+    transform: translateX(-0.8rem);
+}
+.numFoot .changePage .nextImg{
+    transform: translateX(0.8rem);
+
+}
