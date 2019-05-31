@@ -35,10 +35,10 @@ body{
     height:53.8rem;
     margin-left:auto;margin-right:auto;
     margin-top:1.4rem;
-    margin-bottom:10px;
+    margin-bottom:2rem;
     -webkit-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
--moz-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
+    -moz-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
+    box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
 }
 /*navBar*/
 #navBar{
@@ -120,6 +120,7 @@ main .contentWrapper{
     margin-left:auto;
     margin-right:auto;
     margin-top:3rem;
+    padding-bottom:3rem;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: scroll;

@@ -2,7 +2,7 @@
 *::before,*::after{box-sizing: border-box;}
 @font-face{
     font-family: 'PingFang';
-    src: url(../font/PingFang\ Medium.ttf)
+    src: url(../font/PingFang\ Medium.ttf);
 }
 ol,ul{
     list-style: none;
@@ -35,10 +35,10 @@ body{
     height:53.8rem;
     margin-left:auto;margin-right:auto;
     margin-top:1.4rem;
-    margin-bottom:10px;
+    margin-bottom:2rem;
     -webkit-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
--moz-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
+    -moz-box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
+    box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
 }
 /*navBar*/
 #navBar{
@@ -75,7 +75,7 @@ box-shadow: 0px 19px 15px 12px rgba(228,239,255,1);
 aside.tabBar{
     flex-shrink:0;
     width:15rem;
-    height:100%;
+    height:50.2rem;
     background:#ffffff;
     -webkit-box-shadow: 5px 0px 8px -5px rgba(148,140,148,0.75);
     -moz-box-shadow: 5px 0px 8px -5px rgba(148,140,148,0.75);
@@ -120,10 +120,195 @@ main .contentWrapper{
     margin-left:auto;
     margin-right:auto;
     margin-top:1.7rem;
+    padding-bottom:3rem;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 .contentWrapper::-webkit-scrollbar {
     display: none;/*去掉滚动条*/
+}
+/*四个框框*/
+.contentSort{
+    width:62.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top:2.2rem;
+    margin-bottom:3.1rem;
+}
+.contentSort .sortBox{
+    width: 12.1rem;
+    height: 9.5rem;
+    background: rgba(255,255,255,1);
+    border-radius: 0.4rem;
+    padding-top:0.8rem;
+    padding-left:1.9rem;
+}
+.contentSort .sortBox hr{
+    border:none;
+    width:4.3rem;
+    height:2px;
+    margin-top:0.6rem;
+    margin-bottom:0.6rem;
+}
+.contentSort .sortBox .contentSortNum{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.contentSort .sortBox .contentSortTitle{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:rgba(51,51,51,1);
+}
+.blueFt{
+    color: #1f85ff;
+}
+
+.greenFt{
+    color: #65bd65;
+}
+
+.yellowFt{
+    color: #f3a821;
+}
+
+.redFt{
+    color: #f85353;
+}
+.blueBg{
+    background: #1f85ff;
+}
+
+.greenBg{
+    background: #65bd65;
+}
+
+.yellowBg{
+    background: #f3a821;
+}
+
+.redBg{
+    background: #f85353;
+}
+/*状态区域*/
+.stateForm{
+    width:62.5rem;
+    height:37rem;
+    background:rgba(255,255,255,1);
+    border-radius: 0.4rem;
+    position: relative;
+}
+.stateForm .stateContainer{
+    display: flex;
+}
+.stateForm .stateContainer p{
+    margin-top:1.1rem;
+    margin-bottom:2.1rem;
+    padding:0 2rem;
+    border-right: 1px solid rgba(204,204,204,1);
+}
+.stateForm .stateContainer p:last-child{
+    border:none;
+}
+.stateForm .stateContainer .all{
+    font-size:1.2rem;
+    font-weight: 500;
+    color:rgba(64,151,255,1);
+}
+.stateForm .stateContainer .noUse,
+.stateForm .stateContainer .using,
+.stateForm .stateContainer .posted,
+.stateForm .stateContainer .received{
+    font-size:1.2rem;
+    font-weight: 500;
+    color:rgba(102,102,102,1);
+}
+/*状态具体内容li*/
+.stateContent li{
+    margin-bottom:1.4rem;
+    float:left;
+    margin-right:1.3rem;
+    margin-left:1.3rem;
+}
+.stateLi{
+    width:13rem;
+    height:4.5rem;
+    background:rgba(255,255,255,1);
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(51,51,51,0.1);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(51,51,51,0.1);
+    box-shadow: 0px 2px 9px 0px rgba(51,51,51,0.1);
+    border-radius: 0.4rem;
+    position: relative;
+}
+.stateLi img{
+    width:4.5rem;
+    height:2rem;
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+}
+.stateLi .stateText{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.stateLi .phoneNum{
+    font-size:0.9rem;
+    font-weight:500;
+color:rgba(51,51,51,1);
+}
+.stateLi .updateTime{
+    font-size:0.8rem;
+    font-weight:500;
+color:rgba(51,51,51,1);
+}
+/*页码区域*/
+.numFoot{
+    display: flex;
+    justify-content: space-between;
+    width:17rem;
+    height:1.8rem;
+    line-height: 1.8rem;
+    position: absolute;
+    bottom:0.7rem;
+    right:1.3rem;
+}
+.numFoot p{
+    word-spacing: 2px;
+    text-align: center;
+}
+.numFoot .totalText,
+.numFoot .eachPage{
+    font-size:0.8rem;
+    color:rgba(51,51,51,1);
+    font-weight:500;
+}
+.numFoot .eachPage{
+    width:5.6rem;
+    height:100%;
+    border:1px solid rgba(204,204,204,0.5);
+}
+.numFoot .changePage{
+    font-size:0.8rem;
+    color:rgba(64,151,255,1);
+    font-weight:500;
+    width:5.6rem;
+    height:100%;
+    border:1px solid rgba(204,204,204,0.5);
+   
+}
+.numFoot .changePage img{
+    width:0.4rem;
+}
+.numFoot .changePage .preImg{
+    transform: translateX(-0.8rem);
+}
+.numFoot .changePage .nextImg{
+    transform: translateX(0.8rem);
+
 }
